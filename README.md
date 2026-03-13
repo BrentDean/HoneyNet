@@ -137,7 +137,7 @@ WHERE session = '<session_id>';
 ## Example Captured Session
 
     ls
-    touch poocat.txt
+    touch cc.txt
     exit
 
 Session ID:
