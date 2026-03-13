@@ -33,17 +33,17 @@ Linux server to attract automated bots and opportunistic attackers.
        ▼
     Admin access
 
-### Port Configuration
+## Port Configuration
 
-  Port   Service    Purpose
-  ------ ---------- -----------------------
-  22     Redirect   Redirected to Cowrie
-  2222   Cowrie     Honeypot SSH service
-  4222   OpenSSH    Real admin SSH access
+| Port | Service | Purpose |
+|------|--------|--------|
+| 22 | Redirect | Redirected to Cowrie |
+| 2222 | Cowrie | Honeypot SSH service |
+| 4222 | OpenSSH | Real admin SSH access |
 
 iptables redirect rule:
 
-``` bash
+```bash
 iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-port 2222
 ```
 
