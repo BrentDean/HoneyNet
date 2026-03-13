@@ -69,7 +69,7 @@ Commands executed by attackers are stored in a SQLite database.
 Example:
 
     ls
-    touch poocat.txt
+    touch cc.txt
     exit
 
 ### Session Replay
@@ -149,7 +149,7 @@ Stored in SQLite:
     id | session        | timestamp | command
     ------------------------------------------
     1  | 254927014eb9   | ...       | ls
-    2  | 254927014eb9   | ...       | touch poocat.txt
+    2  | 254927014eb9   | ...       | touch cc.txt
     3  | 254927014eb9   | ...       | exit
 
 ------------------------------------------------------------------------
