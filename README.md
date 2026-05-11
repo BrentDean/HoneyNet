@@ -1,4 +1,5 @@
 # Honeynet / T-Pot Log Analysis Report
+<img width="1043" height="1050" alt="Tpot attack map" src="https://github.com/user-attachments/assets/6ff729a2-ec8a-409b-8ab3-9a3c0491a9f8" />
 
 ## 1. Report Summary
 
@@ -46,6 +47,7 @@ The following T-Pot log sources were identified in the extracted archive:
 | `elk/` | Elasticsearch data store |
 
 ## 4. Initial Cowrie Findings
+<img width="1909" height="821" alt="Tpot Top IP" src="https://github.com/user-attachments/assets/1d84529f-6be0-41ea-bf99-3d454f697a24" />
 
 ### 4.1 Top Cowrie Source IPs
 
@@ -533,7 +535,11 @@ During this period, Suricata repeatedly observed SSH traffic from sources such a
 
 ## 8. External Abuse/Exposure Notifications
 
+
 The Hetzner/BSI abuse notifications add strong external validation to the honeynet report. These notifications show that independent Internet-wide scanning systems detected the honeypot as exposing services that resembled real vulnerable systems.
+
+<img width="1086" height="958" alt="abuse hetz" src="https://github.com/user-attachments/assets/20919725-97b2-491d-a2c2-7867fd2a595e" />
+
 
 Important notifications included:
 
@@ -546,7 +552,7 @@ Important notifications included:
 | 2026-03-18 | Industrial control system | IEC-104 exposed on `2404/tcp` |
 | 2026-04-01 | Industrial control system | IEC-104 exposed on `2404/tcp` |
 | 2026-04-01 | SNMP | Open SNMP-like service reporting `Siemens, SIMATIC, S7-300` |
-
+<img width="709" height="1178" alt="snmp warning" src="https://github.com/user-attachments/assets/28dc473e-8fa9-40f5-8a67-43bc5b391c06" />
 These messages should be interpreted carefully. Hetzner stated that the notifications do not necessarily mean the server was involved in abuse; they indicate that the server appeared to expose potentially exploitable services. In this case, that matches the purpose of the T-Pot deployment: honeypot containers intentionally impersonated vulnerable or exposed services to attract scanning and interaction.
 
 The notifications are useful because they show that the honeynet was not only receiving random attacker traffic, but was also visible to large-scale Internet measurement and reporting systems. The server was identified as resembling multiple exposed service categories, including Android ADB, Elasticsearch, SNMP/Siemens S7, IEC-104 industrial control, and SMB backdoor exposure.
