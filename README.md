@@ -457,10 +457,10 @@ The Suricata data indicates broad automated scanning and protocol probing. The m
 The very high count of truncated packets should be treated carefully. These events may reflect malformed traffic, capture-layer artifacts, or noisy Internet scanning rather than distinct attacks.
 
 ## 6. Targeted Ports and Services
-
-The honeynet exposed many simulated services, but an exposed port is not the same thing as a targeted port. For this report, a port is treated as **targeted** only when Cowrie records, Suricata alerts, T-Pot service logs, or external Hetzner/BSI notifications showed interaction with that service.
+<img width="1920" height="1080" alt="T-Pot Dashboard" src="https://github.com/user-attachments/assets/ee1a41bf-3789-4c3c-8426-474d0751b87e" />
 
 ### 6.1 Highest-Confidence Targeted Ports
+The honeynet exposed many simulated services, but an exposed port is not the same thing as a targeted port. For this report, a port is treated as **targeted** only when Cowrie records, Suricata alerts, T-Pot service logs, or external Hetzner/BSI notifications showed interaction with that service.
 
 | Port | Protocol | Service / Honeypot | Evidence | Interpretation |
 |---:|---|---|---|---|
