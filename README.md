@@ -19,7 +19,7 @@ The targeted-port evidence shows that the honeynet attracted activity across mul
 
 - Platform: T-Pot honeynet
 - Hostname: `honeynet2`
-- Public VPS IP: `168.119.178.00`
+- Historical public VPS IP: withheld (retired lab)
 - Primary log archive: `tpot-logs-20260508-044029.tar.gz`
 - Original uncompressed T-Pot data size: `4.2 GB`
 - Extracted log tree: `400 directories, 2291 files`
@@ -409,7 +409,7 @@ Suricata recorded SCADA-specific IEC-104 alerts:
 
 This is useful local evidence because the alerts are not generic TCP/IP noise. They are protocol-specific Suricata signatures for IEC-104, an industrial-control/SCADA protocol commonly associated with electric power and industrial automation environments.
 
-The local SCADA alert list shows repeated IEC-104 responses involving the honeynet IP `168.119.178.95` and external scanner/source systems. Observed external IPs included:
+The local SCADA alert list shows repeated IEC-104 responses involving the honeynet address (withheld) and external scanner/source systems. Observed external IPs included:
 
 ```text
 87.236.176.120
